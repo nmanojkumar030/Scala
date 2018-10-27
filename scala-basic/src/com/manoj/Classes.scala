@@ -62,8 +62,8 @@ object Main {
     println(point1)
     // x and y are public
     println(point1.x)
-    println(point1.x= 5)
-    println(point1.y= 7)
+    println(point1.x = 5)
+    println(point1.y = 7)
 
     val point2 = new Point1()
     println(point2)
@@ -77,7 +77,7 @@ object Main {
 
     // Setters validation in action
     val point5 = new Point2
-    println(point5.a= 120)
+    println(point5.a = 120)
 
     val point6 = new Point3(2, 3)
     // point6.x = 8 -> Doesn't compile, it's val (Immutable)
