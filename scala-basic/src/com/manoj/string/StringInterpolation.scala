@@ -30,6 +30,22 @@ object StringInterpolation {
     println(raw"Hello \n World")
     println("Hello \n World") // Without raw Hello and Word will be printed in 2 lines
 
+    // Escape JSON String
+    // Option 1 - Using backslash
+    val escape: String = "{\"FirstName\":\"Manoj\", \"LastName\":\"Kumar\"}"
+    println(escape)
+
+    // Option 2 - Using triple quotes """ to escape characters
+    val escape1: String = """{"FirstName":"Manoj", "LastName":"Kumar"}"""
+    println(escape1)
+
+    val escape2: String = """
+        |{
+        |"FirstName":"Manoj",
+        |"LastName":"Kumar"
+        |}""".stripMargin
+    println(escape2)
+
   }
 
 }

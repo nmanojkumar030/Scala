@@ -1,3 +1,5 @@
+package com.manoj.blocks
+
 object Blocks {
   def main(args: Array[String]): Unit = {
     val result = {

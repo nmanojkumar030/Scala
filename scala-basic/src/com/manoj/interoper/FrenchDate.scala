@@ -2,6 +2,8 @@
 // Seamless integration with JAVA API
 
 // Can extend Java class and Interface
+package com.manoj.interoper
+
 import java.util.{ Date, Locale }
 import java.text.DateFormat._
 
