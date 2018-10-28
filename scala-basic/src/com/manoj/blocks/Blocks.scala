@@ -11,5 +11,11 @@ object Blocks {
         x
       }
     }
+
+    // Block {}, result of the last statement is the result of the block
+    println({
+      val a: Int = 2 + 2
+      a + 4
+    })
   }
 }
