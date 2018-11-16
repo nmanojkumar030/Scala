@@ -34,7 +34,7 @@ object FunctionWithParam {
   }
 
   def calculateDonutCost(donutName: String, quantity: Int): Double = {
-    println(s"Calculating donut cost for $donutName and quantity $quantity")
+    println(s"Calculating donut cost of $donutName and quantity $quantity")
     2.50 * quantity
   }
 

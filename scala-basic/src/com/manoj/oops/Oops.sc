@@ -1,21 +1,22 @@
 package com.manoj.oops
 
+// Creating class in scala
+class Greeter(prefix: String, suffix: String) {
+  def greet(name: String): Unit = {
+    println(prefix + " " + name + suffix)
+  }
+}
+
+// Case class, here values are compared
+case class Point(x: Int, y: Int)
+
+
 object Oops {
   println("Welcome to the Scala worksheet")
-
-  // Creating class in scala
-  class Greeter(prefix: String, suffix: String) {
-    def greet(name: String): Unit = {
-      println(prefix + " " + name + suffix)
-    }
-  }
 
   // Creating objects from class
   val greeter = new Greeter("Hello", suffix = "!")
   greeter.greet("Manoj")
-
-  // Case class, here values are compared
-  case class Point(x: Int, y: Int)
 
   // Instantiate case class, here no new keyword is required
   val point = Point(1, 2)
@@ -34,22 +35,6 @@ object Oops {
     println(anotherPoint + " and " + yetAnotherPoint + "are different ")
   }
 
-  // Objects, single instance of their definition
-  // Similar to singleton
-  object IdFactory {
-    private var counter = 0
-
-    def create(): Int = {
-      counter += 1
-      counter
-    }
-  }
-
-  val newId: Int = IdFactory.create()
-  println(newId)
-
-  val newerId: Int = IdFactory.create()
-  println(newerId)
 
   // Main method
   object Main {
